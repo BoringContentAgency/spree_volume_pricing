@@ -57,7 +57,7 @@ module SpreeVolumePricing
 
         return product.master.send(type, quantity, user) if use_master_variant_volume_pricing?
 
-        default_price
+        nil
       end
 
       def applicable_volume_prices(user = nil, order = nil)
